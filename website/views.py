@@ -34,7 +34,7 @@ cursor = connection.cursor()
 url = "https://www.fast2sms.com/dev/bulk"
 logging.basicConfig(level=logging.DEBUG)
 
-@views.route('/')
+@views.route("/book", methods=['GET','POST'])
 def logic():
     
     #json_data = alice.get_balance() # get balance / margin limits
