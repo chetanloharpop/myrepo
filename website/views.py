@@ -5,14 +5,14 @@ from flask_login import login_required, current_user
 
 
 import json
-from flask_mail import Mail, Message
+#from flask_mail import Mail, Message
 views = Blueprint('views', __name__)
 import sys
 import logging
 import requests
 from os import path
 from flask import Flask, request, Response
-from flask_ngrok import run_with_ngrok
+#from flask_ngrok import run_with_ngrok
 from alice_blue import *
 import json
 import math
