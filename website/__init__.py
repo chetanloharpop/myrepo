@@ -2,7 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
 
-from flask_ngrok import run_with_ngrok
+#from flask_ngrok import run_with_ngrok
 
 
 #db = SQLAlchemy()
@@ -12,7 +12,7 @@ from flask_ngrok import run_with_ngrok
 def create_app():
    
     app = Flask(__name__)
-    run_with_ngrok(app)
+  #  run_with_ngrok(app)
     app.config['SECRET_KEY'] = 'hjshjhdjah kjshkjdhjs'
    # app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
   #  db.init_app(app)
