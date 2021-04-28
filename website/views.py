@@ -29,7 +29,7 @@ headers = {
 import os
 from flask import Flask, render_template, request, flash, redirect, url_for
 
-connection = pypyodbc.connect('Driver={SQL Server};Server=mydbpop.database.windows.net;Database=mydbpop;uid=pop;pwd=yahoo@786')
+connection = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};Server=mydbpop.database.windows.net;Database=mydbpop;uid=pop;pwd=yahoo@786')
 #connection = pypyodbc.connect('Driver={SQL Server};Server=.;Database=master;uid=sa;pwd=test')
 cursor = connection.cursor()    
 url = "https://www.fast2sms.com/dev/bulk"
