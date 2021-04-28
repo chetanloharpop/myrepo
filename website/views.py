@@ -18,7 +18,7 @@ import json
 import math
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-import pypyodbc
+import pyodbc
 #access_token = AliceBlue.login_and_get_access_token(username='AB169563', password='sharu12311', twoFA='a',  api_secret='K0VSBC2Y6NNZ6QFI9BVQK4VIYR4UW07DX60BV2RFESA6ECRX1C581UWQFM4UIHBG')
 #alice = AliceBlue(username='AB169563', password='sharu12311', access_token=access_token)
 headers = {
@@ -29,7 +29,7 @@ headers = {
 import os
 from flask import Flask, render_template, request, flash, redirect, url_for
 
-connection = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};Server=tcp:mydbpop.database.windows.net,1433;Database=mydbpop;uid=pop;pwd=yahoo@786;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30')
+connection = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};Server=tcp:mydbpop.database.windows.net,1433;Database=mydbpop;uid=pop;pwd=yahoo@786;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30')
 #connection = pypyodbc.connect('Driver={SQL Server};Server=.;Database=master;uid=sa;pwd=test')
 
 
