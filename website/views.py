@@ -29,7 +29,7 @@ headers = {
 import os
 from flask import Flask, render_template, request, flash, redirect, url_for
 
-connection = pypyodbc.connect('Driver={ODBC Driver 13 for SQL Server};Server=tcp:mydbpop.database.windows.net,1433;Database=mydbpop;uid=pop;pwd=yahoo@786;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30')
+connection = pypyodbc.connect('Driver={ODBC Driver 17 for SQL Server};Server=tcp:mydbpop.database.windows.net,1433;Database=mydbpop;uid=pop;pwd=yahoo@786;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30')
 #connection = pypyodbc.connect('Driver={SQL Server};Server=.;Database=master;uid=sa;pwd=test')
 
 
